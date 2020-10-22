@@ -3,6 +3,8 @@ html,
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #fff;
+    width: 100vw;
+    height: 100vh;
 }
 
 * {
@@ -24,6 +26,10 @@ header a {
     letter-spacing: 2px;
 }
 
+header a:hover {
+    font-weight: bold;
+}
+
 header img {
     margin: 0 120px 0 190px;
     width: 94px;
@@ -31,6 +37,7 @@ header img {
 }
 
 main {
+    max-width: 100vw;
     width: 940px;
     height: 360px;
     background-color: #FBDFDB;
@@ -72,15 +79,39 @@ section h1 {
     margin: 50px 0px 20px;
 }
 
-section .cards {
+.card {
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
-section .cards img {
-    border-radius: 15px;
-    margin: 0 auto;
+.cards img {
     width: 300px;
     height: 140px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.cards h3 {
+    margin-top: 20px;
+}
+
+.cards p {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: #777777;
+    font-size: 14px;
+}
+
+footer {
+    background: #eeeeee;
+    width: 100vw;
+    height: 10vh;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 5vh;
+    color: #999999;
 }
